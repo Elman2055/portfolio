@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.experienceBlock {
+  background: var(--experience-bg);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 70%;
+  margin: 20px auto;
+}
+
+.infoContainer {
+  display: flex;
+}
+
+.companyContainer {
+  width: 50%;
+  padding-right: 5px;
+  border-right: 2px solid rgb(105, 105, 105);
+  text-align: left;
+}
+
+.posContainer {
+  width: 50%;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.dateInfo {
+  font-size: 28px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.companyName {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.posName {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.companyInfo,
+.jobDescription {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.technologiesContainer {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.technologies {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.technologyList {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.technologyList li {
+  background-color: var(--technologies-bg);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.linkk {
+  text-decoration: none;
+  color: rgb(42 158 116);
+}
+
+.addText {
+  font-size: 20px;
+  font-weight: 1000;
+}
+
+@media only screen and (max-width: 950px) {
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .companyContainer {
+    width: auto;
+    border: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .posContainer {
+    width: auto;
+    text-align: center;
+    margin: 0;
+  }
+
+  .technologiesContainer {
+    width: auto;
+  }
+}
