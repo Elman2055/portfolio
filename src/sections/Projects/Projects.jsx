@@ -10,7 +10,7 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={rickandmorty}
-          link="https://github.com/Ade-mir/company-landing-page-2"
+          link="http://77.243.80.128:3000/"
           h3="Rick and Morty"
           p="Website"
           rick={"rick"}
