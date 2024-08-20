@@ -1,19 +1,18 @@
 import styles from "./HeroStyles.module.css";
 import profile from "../../assets/profile.png";
-import sun from "../../assets/sun.svg";
-import moon from "../../assets/moon.svg";
 import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
 import telegramLight from "../../assets/telegram-svgrepo-com.svg";
 import telegramDark from "../../assets/telegram-svgrepo-com-dark.svg";
+import ThemeSwitch from "../lib/Theme";
+import { FormControlLabel } from "@mui/material";
 import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
 
-  const themeIcon = theme === "light" ? sun : moon;
   const githubIcon = theme === "light" ? githubLight : githubDark;
   const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
   const telegramIcon = theme === "light" ? telegramLight : telegramDark;
@@ -22,11 +21,11 @@ function Hero() {
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
         <img src={profile} className={styles.hero} alt="Profile picture" />
-        <img
+        <FormControlLabel
           className={styles.colorMode}
-          src={themeIcon}
-          alt="Color mode icon"
-          onClick={toggleTheme}
+          control={
+            <ThemeSwitch checked={theme === "dark"} onChange={toggleTheme} />
+          }
         />
       </div>
       <div className={styles.info}>

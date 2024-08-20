@@ -17,13 +17,11 @@ function Skills() {
         <SkillList src={checkMarkIcon} skill="Next" />
         <SkillList src={checkMarkIcon} skill="Vue" />
       </div>
-      <hr />
       <div className={styles.skillList}>
         <SkillList src={checkMarkIcon} skill="Redux" />
         <SkillList src={checkMarkIcon} skill="RTK Query" />
         <SkillList src={checkMarkIcon} skill="SSR,SSG,CSR" />
       </div>
-      <hr />
       <div className={styles.skillList}>
         <SkillList src={checkMarkIcon} skill="HTML" />
         <SkillList src={checkMarkIcon} skill="CSS" />
@@ -31,7 +29,6 @@ function Skills() {
         <SkillList src={checkMarkIcon} skill="JavaScript" />
         <SkillList src={checkMarkIcon} skill="TypeScript" />
       </div>
-      <hr />
       <div className={styles.skillList}>
         <SkillList src={checkMarkIcon} skill="MUI" />
         <SkillList src={checkMarkIcon} skill="Ant Design" />
@@ -40,7 +37,6 @@ function Skills() {
         <SkillList src={checkMarkIcon} skill="React-slick" />
         <SkillList src={checkMarkIcon} skill="Bootstrap" />
       </div>
-      <hr />
       <div className={styles.skillList}>
         <SkillList src={checkMarkIcon} skill="GitHub" />
         <SkillList src={checkMarkIcon} skill="GitLub" />

@@ -83,6 +83,12 @@
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 799px) {
+  .colorMode {
+    right: -10%;
+  }
+}
+
 @media (width >= 800px) {
   .container {
     flex-direction: row-reverse;
