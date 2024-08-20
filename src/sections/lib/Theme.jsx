@@ -1,5 +1,5 @@
 import sun from "../../assets/sunIcon.png";
-import moon from "../../assets/moon.svg";
+import moon from "../../assets/moonIcon.png";
 import cloud from "../../assets/cloudIcon.png";
 import nightCloud from "../../assets/nightCloud.png";
 import { Switch } from "@mui/material";
