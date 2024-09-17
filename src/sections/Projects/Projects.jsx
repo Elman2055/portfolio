@@ -10,16 +10,16 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={rickandmorty}
-          link="http://77.243.80.128:3000/"
+          link="https://rick-and-morty-bay-alpha.vercel.app"
           h3="Rick and Morty"
-          p="Website"
+          p="Website(Next.js)"
           rick={"rick"}
         />
         <ProjectCard
           src={freshBurger}
           link="https://elman2055.github.io/burgers/"
           h3="Create Burgers"
-          p="Website"
+          p="Website(React)"
         />
         <ProjectCard
           src={rickandmorty}
